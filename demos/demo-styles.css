@@ -26,6 +26,11 @@ a {
     margin: 40px 0;
 }
 
+.back-btn {
+    display: inline-block;
+    color: #808080;
+    font-size: 18px;
+}
 
 
 
