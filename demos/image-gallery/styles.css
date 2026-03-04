@@ -1,0 +1,123 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 40px 0 0;
+}
+
+.gallery-grid-item {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .gallery-grid-item img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .gallery-grid-item:hover img {
+        opacity: .7;
+    }
+
+.gallery-carousel-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-carousel-rel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+
+    .gallery-carousel img {
+        max-width: 100%;
+        max-height: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+.gallery-carousel-nav {
+    margin-top: 20px;
+}
+
+#gallery-image-counter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#gallery-close-btn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.gallery-close-1 {
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+    border-radius: 20px;
+    transform: rotate(-45deg) translate(-2px, 0);
+}
+
+.gallery-close-2 {
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+    border-radius: 20px;
+    transform: rotate(45deg) translate(-2px, 0);
+}
+
+#gallery-prev-btn {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(135deg);
+    cursor: pointer;
+}
+
+#gallery-next-btn {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(315deg);
+    cursor: pointer;
+}

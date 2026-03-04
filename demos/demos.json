@@ -15,5 +15,10 @@
     "title": "Text Slider",
     "description": "Text slider w/ arrows and dots.",
     "path": "./slider-arrows/"
+  },
+  {
+    "title": "Image Gallery",
+    "description": "Image gallery w/ large image popup.",
+    "path": "./image-gallery/"
   }
 ]
