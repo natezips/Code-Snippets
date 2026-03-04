@@ -53,8 +53,19 @@
         flex: 0 0 calc((100% - (1 * var(--gap))) / 2);
         max-width: calc((100% - (1 * var(--gap))) / 2);
     }
+        
+}
+
+@media (max-width: 576px) {
+    .company-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 
         .company-item a {
-            padding: 0px;
+            padding: 10px;
         }
+
 }
+
+
