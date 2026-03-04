@@ -10,5 +10,10 @@
     "title": "Responsive Flex Grid",
     "description": "Flexible 3→2 column responsive grid.",
     "path": "./flex-responsive-grid/"
+  },
+  {
+    "title": "Text Slider",
+    "description": "Text slider w/ arrows and dots.",
+    "path": "./slider-arrows/"
   }
 ]

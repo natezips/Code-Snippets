@@ -1,0 +1,139 @@
+.test-wrapper {
+    position: relative;
+}
+
+.test-container {
+    margin: auto;
+    overflow: hidden;
+    max-width: 1460px;
+    padding: 0 20px;
+}
+
+.test-slider {
+    max-width: 1460px;
+    margin: 0 auto;
+    height: 168px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+    .test-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+.testimonial {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+
+    /* Style the author's name */
+    .testimonial p:last-child {
+        margin-top: 10px;
+    }
+
+.test-text {
+    font-size: 24px;
+    color: #2899d5;
+    line-height: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.test-dot.active {
+    background-color: #2899d5;
+}
+
+/* Next & previous buttons */
+.test-prev, .test-next {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+    .test-prev:hover, .test-next:hover {
+        opacity: 1;
+    }
+
+.test-prev-arrow, .test-next-arrow {
+    border: solid 3px;
+    border-width: 0 3px 3px 0;
+    width: 1rem;
+    height: 1rem;
+    color: #00468b;
+}
+
+
+
+/* Position the "next button" to the right */
+.test-next {
+    right: 145px;
+    transform: rotate(315deg);
+}
+
+.test-prev {
+    left: 145px;
+    transform: rotate(135deg);
+}
+
+
+/* The dots */
+.test-dot {
+    width: 20px;
+    height: 3px;
+    margin: 10px 5px;
+    background-color: #ccc;
+    cursor: pointer;
+    display: inline-block;
+}
+
+    .active2, .test-dot:hover {
+        background-color: #2899d5;
+    }
+
+
+/*.no-transition {
+        transition: none !important;
+    }*/
+
+@media screen and (max-width: 1800px) {
+    .test-next {
+        right: 20px;
+    }
+
+    .test-prev {
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .test-container {
+        /*height: 540px;*/
+    }
+
+    .test-slider {
+        height: auto;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .testimonial {
+        scroll-snap-align: start;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .test-prev, .test-next {
+        display: none;
+    }
+
+}
