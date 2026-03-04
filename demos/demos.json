@@ -20,5 +20,10 @@
     "title": "Image Gallery",
     "description": "Image gallery w/ large image popup.",
     "path": "./image-gallery/"
+  },
+  {
+    "title": "Tables",
+    "description": "Examples of different tables.",
+    "path": "./tables/"
   }
 ]
