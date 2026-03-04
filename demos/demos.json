@@ -1,0 +1,14 @@
+﻿
+
+[
+  {
+    "title": "Employee Directory Filter",
+    "description": "Search + department filtering for employee cards.",
+    "path": "./employee-filter/"
+  },
+  {
+    "title": "Responsive Flex Grid",
+    "description": "Flexible 3→2 column responsive grid.",
+    "path": "./flex-responsive-grid/"
+  }
+]
