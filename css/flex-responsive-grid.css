@@ -1,0 +1,53 @@
+
+/* 
+Responsive flex grid
+- 3 columns desktop
+- 2 columns tablet
+- variable gap
+*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-40 {
+    --gap: 40px;
+    gap: var(--gap);
+}
+
+.item-col-3 {
+    flex: 0 0 calc((100% - (2 * var(--gap))) / 3);
+    max-width: calc((100% - (2 * var(--gap))) / 3);
+}
+
+.item-col-4 {
+    flex: 0 0 calc((100% - (3 * var(--gap))) / 4);
+    max-width: calc((100% - (3 * var(--gap))) / 4);
+}
+
+@media (max-width: 992px) {
+
+    .row-40 {
+        --gap: 20px;
+        gap: var(--gap);
+    }
+
+    .item-col-3,
+    .item-col-4 {
+        flex: 0 0 calc((100% - (1 * var(--gap))) / 2);
+        max-width: calc((100% - (1 * var(--gap))) / 2);
+    }
+
+}
+
+@media (max-width: 576px) {
+    .item-col-1,
+    .item-col-2,
+    .item-col-3,
+    .item-col-4,
+    .item-col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
