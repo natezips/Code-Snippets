@@ -1,0 +1,60 @@
+.company-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-40 {
+    --gap: 40px;
+    gap: var(--gap);
+}
+
+.company-item {
+    flex: 0 0 calc((100% - (2 * var(--gap))) / 3);
+    max-width: calc((100% - (2 * var(--gap))) / 3);
+}
+
+    .company-item a {
+        display: block;
+        font-size: 22px;
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #cccccc;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #fff;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .company-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.25s ease;
+    }
+
+@media (hover: hover) {
+    .company-item a:hover,
+    .company-item a:focus-within {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+}
+
+@media (max-width: 992px) {
+
+    .row-40 {
+        --gap: 20px;
+        gap: var(--gap);
+    }
+
+    .company-item {
+        flex: 0 0 calc((100% - (1 * var(--gap))) / 2);
+        max-width: calc((100% - (1 * var(--gap))) / 2);
+    }
+
+        .company-item a {
+            padding: 0px;
+        }
+}
