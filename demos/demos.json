@@ -25,5 +25,10 @@
     "title": "Tables",
     "description": "Examples of different tables.",
     "path": "./tables/"
+  },
+  {
+    "title": "Simple Table Page",
+    "description": "Example of a video pageg w/ CTA.",
+    "path": "./simple-video/"
   }
 ]

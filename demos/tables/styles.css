@@ -7,6 +7,7 @@
 }
 
 
+/* Basic Table */
 .table-basic {
     width: 100%;
     border-collapse: collapse;
@@ -23,7 +24,7 @@
 
 
 
-
+/* Table w/ hr background and every other row background */
 .table-striped {
     width: 100%;
     border-collapse: collapse;
@@ -47,7 +48,7 @@
 
 
 
-
+/* Table with no outside border */
 .table-inner-borders {
     width: 100%;
     border-collapse: collapse;
@@ -82,7 +83,7 @@
 
 
 
-
+/* Modern table w/ row hover */
 .table-modern {
     width: 100%;
     border-collapse: separate;
